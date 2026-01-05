@@ -1,3 +1,4 @@
+/*
 package learn.com.ecommerce.service;
 
 import jakarta.transaction.Transactional;
@@ -17,7 +18,12 @@ public class OrderService {
     private final InventoryService inventoryService;
     private final InventoryRepository inventoryRepository;
     private  final ProductRepository productRepository;
-
+    public OrderService() {
+        this.orderRepository = null;
+        this.inventoryService = null;
+        this.inventoryRepository = null;
+        this.productRepository = null;
+    }
     public OrderService(OrderRepository orderRepository, InventoryService inventoryService, InventoryRepository inventoryRepository, ProductRepository productRepository) {
         this.orderRepository = orderRepository;
         this.inventoryService = inventoryService;
@@ -34,3 +40,4 @@ public class OrderService {
 
     }
 }
+*/

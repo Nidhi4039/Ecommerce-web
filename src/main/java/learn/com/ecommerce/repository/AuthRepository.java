@@ -1,15 +1,12 @@
-/*
 package learn.com.ecommerce.repository;
 
-import learn.com.ecommerce.model.Inventory;
+import learn.com.ecommerce.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
-
 @Repository
-public interface InventoryRepository extends JpaRepository<Inventory, Long> {
-
-    Optional<Inventory> findByProductId(Long productId);
+public interface AuthRepository extends JpaRepository<User, Long> {
+    Optional<User> findByEmail(String email);
 }
-*/
+

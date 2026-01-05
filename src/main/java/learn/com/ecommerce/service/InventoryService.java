@@ -1,3 +1,4 @@
+/*
 package learn.com.ecommerce.service;
 
 import jakarta.transaction.Transactional;
@@ -9,7 +10,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class InventoryService {
     private final InventoryRepository inventoryRepository;
-
+    public InventoryService() {
+        this.inventoryRepository = null;
+    }
     public InventoryService(InventoryRepository inventoryRepository) {
         this.inventoryRepository = inventoryRepository;
     }
@@ -28,3 +31,4 @@ public class InventoryService {
         }
     }
 }
+*/
